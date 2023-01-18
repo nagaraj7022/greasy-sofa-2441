@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftNavBox{
+    display: flex;
+    align-items: center;
+}
+.rightNavBox{
+    display: flex;
+    align-items: center;
+}
