@@ -11,3 +11,65 @@
     display: flex;
     align-items: center;
 }
+.mid{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   }
+  .mid>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,300px);
+  }
+  .mid>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .mid img{
+    width: 50%;
+  }
+  .BRAND{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   }
+  .BRAND>div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    
+  }
+  .BRAND>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .BRAND img{
+    width: 100%;
+  }
+  .topdeals>div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+  }
+  .topdeals img{
+    width:150%
+  }
+
+
+  #footer-dom-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
