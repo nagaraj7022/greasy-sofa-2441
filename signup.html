@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div>
-        <div>
-            <img src="./image/logoIcon.png" alt="">
+    <div class="signup-container">
+        <form id="signUpFormHai">
+        <div class="leftbox">
+            <img src="./image/logoIcon.png" alt="" id="logo--image-hai">
             <h2>BECOME AN AUTOZONE REWARDS MEMBER</h2>
-            <div>
-                <input type="text" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="First name">
+            <div class="emailPassword">
+                <input type="text" style="padding: 15px 0 10px 15px;"  placeholder="First name" id="fnameInput" required>
+            
+            
+                <input type="text" style="padding: 15px 0 10px 15px;"  placeholder="Last name" id="lnameInput" required>
+            
+            
+                <input type="number" style="padding: 15px 0 10px 15px;"  placeholder="Zip Code" id="zipCodeInput" required>
+            
+            
+                <input type="numeric" style="padding: 15px 0 10px 15px;"  placeholder="Phone Number" id="phoneNumberInput" required>
+            
+            
+                <input type="email" style="padding: 15px 0 10px 15px;"  placeholder="Email" id="emailInput" required>
+            
+            
+                <input type="text" style="padding: 15px 0 10px 15px;"  placeholder="password" autocomplete="on" id="passInput" required>
             </div>
-            <div>
-                <input type="text" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="Last name">
-            </div>
-            <div>
-                <input type="number" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="Zip Code">
-            </div>
-            <div>
-                <input type="number" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="Phone Number">
-            </div>
-            <div>
-                <input type="email" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="Email">
-            </div>
-            <div>
-                <input type="text" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="password">
-            </div>
-            <div>
+            <br><br>
+            <div class="pass-texts">
                 <p>Your Password must have:</p>
                 <p>* Between 8 and 30 characters</p>
                 <p>* At least 1 number</p>
@@ -37,16 +40,24 @@
                 <p>* A special character</p>
             </div>
             
-            <div>
+            <div id="image--in-form">
                 <img src="./image/signup1.png" alt="">
             </div>
+            <div style="margin:30px 0px; font-size: 24px;">
+
+                <input type="checkbox" value="remberMe" style="margin-right: 10px;" checked required><span>Remember Me</span>
+            </div>
+            <input type="submit" value="Join Now" id="join-now-button">
             <div>
                 <p>By clicking Join Now you agree to our Terms & Conditions, our Privacy Policy, our Financial Incentive, and the AutoZone Rewards Program Terms</p>
             </div>
         </div>
-        <div>
+    </form>
+        <div class="rightImage">
             <img src="./image/signup2.png" alt="">
         </div>
     </div>
+
+    <script src="signUp.js"></script>
 </body>
 </html>

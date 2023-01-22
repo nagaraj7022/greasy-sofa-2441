@@ -1,7 +1,17 @@
+body{
+  position: relative;
+}
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    /* position: fixed; */
+    /* background-color: #fff; */
+    /* width: 100%; */
+    border-bottom: 1px solid rgb(159, 157, 157);
+    z-index: 1000;
+
 }
 .leftNavBox{
     display: flex;
@@ -10,6 +20,27 @@
 .rightNavBox{
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+
+#banner--iamge-hai{
+  /* position: absolute; */
+  /* top: 800px; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(39, 34, 34);
+}
+#productsTab{
+  background-color: rgb(44, 41, 41);
+  color: white;
+  /* height: 100%; */
+  border-radius: 10px;
+}
+#productsTab:hover{
+  background-color: rgb(108, 102, 102);
+  cursor: pointer;
 }
 .mid{
     width: 80%;
@@ -20,30 +51,38 @@
   .mid>div{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,300px);
+    gap: 30px;
+    /* grid-template-rows: repeat(3,300px); */
   }
   .mid>div>div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    font-size: 23px;
+    font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .mid>div>div:hover{
+    background-color: rgb(224, 208, 208);
   }
 
   .mid img{
-    width: 50%;
-  }
-  .BRAND{
     width: 80%;
     margin: auto;
+    
+  }
+  .BRAND{
+    width: 80%; 
+    margin: auto;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    
    }
   .BRAND>div{
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    gap: 10px;
     
   }
   .BRAND>div>div{
@@ -58,12 +97,9 @@
   .BRAND img{
     width: 100%;
   }
-  .topdeals>div{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-  }
+  
   .topdeals img{
-    width:150%
+    width:100%
   }
 
 
@@ -73,3 +109,42 @@
     justify-content: space-between;
 
   }
+
+  .footer{
+    background-color: rgb(40, 37, 37);
+    color: white;
+  }
+  .nagu img{
+    width:100%
+  }
+
+  #lokikidukan img{
+    width: 100%;
+    height: 30vh;
+  }
+  #menukidukan{
+    border: 3px solid ;
+  }
+
+  #naga-single-image>img{
+    width: 100%;
+  }
+
+  .rightNavBox{
+    margin-right: 20px;
+  }
+ .profileSection1{
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 20px;
+ }
+ .profileSection2{
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+ }
+
+ #logo--image{
+  width: 150px;
+ }

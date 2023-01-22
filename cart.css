@@ -1,0 +1,18 @@
+#cart-data{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#cart-data img{
+    width: 100%;
+}
+.delete-button{
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-button:hover{
+    background-color: rgb(55, 41, 41);
+}
