@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div>
+    <div class="login-container">
         <div>
-           <div>
-            <img src="./image/logoIcon.png" alt="">
-           </div>
+            <div>
+             <img src="./image/logoIcon.png" alt="">
+            </div>
            <div>
             <h2>WELCOME BACK</h2>
            </div>
            <div>
             <p>Sign in to save your vehicles. track your orders, and earn AutoZone Rewars when you purchase.</p>
            </div>
-           <div>
-            <input type="email" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="Email or Username">
+         <form id="loginPageForm">
+           <div class="emailPassword">
+            <input type="email"  style="padding: 16px 0 10px 16px;"  placeholder="Email or Username" id="emailFromUser" required>
+
+            <input type="password" style="padding: 16px 0 10px 16px;" placeholder="password" autocomplete="on" id="passFromUser" required/>
+
            </div>
-           <div>
-            <input type="text" style="padding: 26px 0 10px 16px;" maxlength="40" minlength="4" placeholder="password">
+           <div class="chekboxContainer">
+            <div>
+
+                <input type="checkbox" checked required>
+                <span >Remember me</span>
+            </div>
+            <a href="#">Forget Password</a>
            </div>
            <div>
             <img src="./image/sign1.png" alt="">
            </div>
+           <input type="submit" id="signInBtn" value="Sign In">
+        </form>
+           <div class="createAccountSection">
+                <span>Or</span>
+                <a href="./signup.html">Create an account</a>
+           </div>
         </div>
-        <div>
+        <div class="rightImage">
             <img src="./image/sig2.png" alt="">
         </div>
     </div>
+
+    <script src="login.js"></script>
 </body>
 </html>

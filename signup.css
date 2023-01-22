@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.leftbox{
+    margin-right: 40px;
+}
+.signup-container{
+    display: flex;
+    height: 100vh;
+}
+.signup-container > form{
+    width: 60%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.rightImage{
+    /* padding:0px 40px; */
+    width: 100%;
+}
+.rightImage >img{
+    width: 100%;
+    
+}
+.emailPassword  input{
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.pass-texts{
+    margin-top: -15px;
+    padding-top: 0px;
+}
+#logo--image-hai{
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+#join-now-button{
+    width: 100%;
+    font-size: 24px;
+    padding: 8px ;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(40, 40, 43);
+    margin-bottom: 10px;
+}
+#join-now-button:hover{
+    color: white;
+    background-color: rgb(65, 65, 70);
+    cursor: pointer;
+}
+#image--in-form{
+    margin-top: 20px;
+}
